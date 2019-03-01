@@ -8,6 +8,7 @@ setup(
     packages=[],
     py_modules=[
         'geek_publisher',
+	'geek_subscriber'
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -28,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'geek_publisher = geek_publisher:main',
+	    'geek_subscriber = geek_subscriber:main'
         ],
     },
 )
