@@ -13,7 +13,7 @@ class GeekPublisher(Node):
 
 	# Creamos el publicador. Transmitirá mensaje de tipo String 
 	# en el topico denominado chatter
-        self.publicador_ = self.create_publisher(String, 'chatter')
+        self.publicador_ = self.create_publisher(String, 'chatter', 10)
 
 	# Creamos la variable denominada periodo y le asignamos 
 	# el valor de 2 segundos

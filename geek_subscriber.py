@@ -13,7 +13,7 @@ class GeekSubscriber(Node):
         
         # Creamos el subscriptor. Cuando reciba mensajes de tipo String 
 		# en el topico denominado chatter llamará a la funcion subscriber_callback
-        self.subscription = self.create_subscription(String, 'chatter', self.subscriber_callback)
+        self.subscription = self.create_subscription(String, 'chatter', self.subscriber_callback, 10)
 
 	# Funcion a la que se va a llamar cada vez que se reciba un mensaje
     def subscriber_callback(self, msg):
